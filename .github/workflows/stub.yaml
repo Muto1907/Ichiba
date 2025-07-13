@@ -1,9 +1,10 @@
 name: empty
 on: push
 jobs:
-  name: noop
-  runs-on: ubuntu-latest
+  noop:
+    name: "Deploy"
+    runs-on: ubuntu-latest
   
-  steps:
-    - name: "Echo CI scaffold"
-    - run: echo "CI scaffold"
+    steps:
+      - name: "Echo CI scaffold"
+      - run: echo "CI scaffold"
